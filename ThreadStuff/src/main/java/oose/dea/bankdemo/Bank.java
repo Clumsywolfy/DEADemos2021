@@ -2,8 +2,7 @@ package oose.dea.bankdemo;
 
 public class Bank {
 	private int saldo = 100;
-	
-	
+
 	public synchronized void  stort (int amount){
 		System.out.println("Saldo voor storting " + saldo + ", stort: " + amount );
 		saldo = saldo + amount;

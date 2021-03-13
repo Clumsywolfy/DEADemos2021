@@ -32,7 +32,6 @@ public class StarWars {
         // Retrieve from database:
         Jedi jedi = jediDAO.getJedi(id);
 
-
         if (jedi == null){
             // help de jedi bestaat niet! wat doen we nu?
             return Response.status(404).entity("niet gevonden").build();
